@@ -12,7 +12,10 @@ int main(void)
         printf("height: ");
         n = GetInt();
     }
-    while (n < 1 || n > 23);
+    while (n < 0 || n > 23);
+    if (n == 0) {
+        return(0);
+    }
     //Start a loop with a counter for each pyramid row
     do {
         blocks = x + 2;
