@@ -8,4 +8,6 @@ int main(int argc, char* argv[]) {
             printf("char %i: %c\n", n, argv[i][n]);
         };
     };
+    int result = 34;
+    printf("touching memory %d: %s\n", result, argv[result]);
 };
